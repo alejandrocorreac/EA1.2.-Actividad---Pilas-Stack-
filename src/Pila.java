@@ -35,4 +35,14 @@ public class Pila {
         return null;
     }
 
+    public boolean isEmpty() {
+        return tope == -1;
+    }
+
+    public void mostrar() {
+        for (int i = 0; i <= tope; i++) {
+            System.out.println(elementos[i]);
+        }
+    }
+
 }
