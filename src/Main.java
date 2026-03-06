@@ -30,6 +30,27 @@ import java.util.Scanner;
                     pilaAcciones.push(texto);
                     break;
 
+                case 2:
+                    if (!pilaAcciones.isEmpty()) {
+                        String deshacer = pilaAcciones.pop();
+                        pilaRedo.push(deshacer);
+                        System.out.println("Se deshizo: " + deshacer);
+                    } else {
+                        System.out.println("No hay acciones para deshacer");
+                    }
+                    break;
+
+                case 3:
+                    if (!pilaRedo.isEmpty()) {
+                        String rehacer = pilaRedo.pop();
+                        pilaAcciones.push(rehacer);
+                        System.out.println("Se rehizo: " + rehacer);
+                    } else {
+                        System.out.println("No hay acciones para rehacer");
+                    }
+                    break;
+
 
             }
         }
+    }
