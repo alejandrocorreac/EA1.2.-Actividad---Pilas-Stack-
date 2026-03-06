@@ -50,7 +50,20 @@ import java.util.Scanner;
                     }
                     break;
 
+                case 4:
+                    System.out.println("\nTexto actual:");
+                    pilaAcciones.mostrar();
+                    break;
 
+                case 5:
+                    System.out.println("Saliendo...");
+                    break;
+
+                default:
+                    System.out.println("Opción inválida");
             }
-        }
+
+        } while (opcion != 5);
+
+        sc.close();
     }
