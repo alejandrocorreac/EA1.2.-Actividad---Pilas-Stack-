@@ -11,6 +11,14 @@ Implementar un editor de texto simple en consola que permita realizar operacione
 ## Concepto de Pila
 Una pila es una estructura de datos que sigue el principio LIFO (Last In, First Out). Las operaciones principales son push, pop, peek e isEmpty.
 
+push() → agrega un elemento a la pila
+
+pop() → elimina el último elemento agregado
+
+peek() → muestra el elemento superior sin eliminarlo
+
+isEmpty() → verifica si la pila está vacía
+
 ## Funcionamiento
 El programa utiliza dos pilas:
 
