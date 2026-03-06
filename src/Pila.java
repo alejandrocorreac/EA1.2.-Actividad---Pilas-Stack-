@@ -7,5 +7,16 @@ public class Pila {
         this.tamaño = tamaño;
         elementos = new String[tamaño];
         tope = -1;
+
     }
+
+    public void push(String dato) {
+        if (tope < tamaño - 1) {
+            tope++;
+            elementos[tope] = dato;
+        } else {
+            System.out.println("La pila está llena");
+        }
+    }
+
 }
