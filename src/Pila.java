@@ -19,4 +19,20 @@ public class Pila {
         }
     }
 
+    public String pop() {
+        if (!isEmpty()) {
+            String dato = elementos[tope];
+            tope--;
+            return dato;
+        }
+        return null;
+    }
+
+    public String peek() {
+        if (!isEmpty()) {
+            return elementos[tope];
+        }
+        return null;
+    }
+
 }
